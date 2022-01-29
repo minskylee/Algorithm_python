@@ -16,5 +16,3 @@ while True:
         if is_pri_num(i):
             cnt += 1
     print(cnt)
-
-    
