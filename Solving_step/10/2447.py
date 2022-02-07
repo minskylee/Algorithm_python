@@ -1,22 +1,26 @@
-def star(n):
-    if n < 1:
+from math import log
+
+def star(space, n):
+    star_pattern = int(log(n, 3))
+
+    if star_pattern == 1:
+        star_space[0][:3] = star_space[2][:3] = [1, 1, 1]
+        star_space[1][:3] = [1, 0, 1]
         return
-    elif n == 1:
-        print('***'+'\n' + '* *'+'\n' + '***'+'\n')
-        return
-    star_1 = ('***'*(n//3)+'\n' + '* *'*(n//3)+'\n' + '***'*(n//3)+'\n')
     
+    star(space, n//3)
     
-    return star(n-3)
+    for i in range(3):
+        for j in range(3):
+            if i == 1 and j ==1:
+                pass
+            star_space[][] = star_space[][]
+
+
 
 N = int(input())
 
-print(star(N))
+star_space = [[0 for _ in range(N)] for _ in range(N)]
 
-
-# star_base = ('***'+'\n' + '* *'+'\n' + '***'+'\n')
-# star_space = ('   '+'\n' + '   '+'\n' + '   '+'\n')
-# star_1 = ('***'*(n//3)+'\n' + '* *'*(n//3)+'\n' + '***'*(n//3)+'\n')
-# star_2 = ('***   ***'*(n//9)+'\n' + '* *   * *'*(n//9)+'\n' + '***   ***'*(n//9)+'\n')
-# print(star_1 + star_2 + star_1)
-# 1, 3, 9, 27, 81 ... 3**8
+star(star_space, N)
+print(star_space)
