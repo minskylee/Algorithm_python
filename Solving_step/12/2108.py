@@ -21,7 +21,7 @@ if len(tmp) > 1:
 else:
     mod = tmp[0][0]
 print(tmp)
-print(f'{sum(n_arr)/N:.0f}')
+print(round(sum(n_arr)/N))
 print(n_arr[(N-1)//2])
 print(mod)
 print(n_arr[-1] - n_arr[0])
