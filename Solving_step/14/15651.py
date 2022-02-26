@@ -1,0 +1,16 @@
+# https://www.acmicpc.net/problem/15651
+# N과 M(3)
+
+
+def f(idx):
+    if idx == M:
+        print(*select)
+        return
+    for i in range(N):
+        select[idx] = arr[i]
+        f(idx+1)
+
+N, M = map(int, input().split())
+arr = [x for x in range(1, N+1)]
+select = [0] * M
+f(0)
