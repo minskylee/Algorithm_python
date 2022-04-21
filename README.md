@@ -2,6 +2,9 @@
 
 #### 문제 풀어보는 사이트
 
-> [beakjoon](https://www.acmicpc.net/)
+> [BAE/\<JOON\>](https://www.acmicpc.net/)
 >
-> [swea](https://swexpertacademy.com/main/main.do)
+> [SW Expert Academy](https://swexpertacademy.com/main/main.do)
+>
+> [Programmers](https://programmers.co.kr/)
+
